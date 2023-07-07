@@ -46,6 +46,34 @@
         </div>
     </div>
 
+    {{-- Carousel --}}
+    @if (Route::is('ecom.index'))
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner vh-100">
+                <div class="carousel-item active">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fd0%2Fb6%2F5c%2Fd0b65c5c53657f897af6862c44d8a5e2.jpg&f=1&nofb=1&ipt=02d19fedd21885f38f8599d7560460f8f0cedbf23c000e3e8c227ab2507832cb&ipo=images"
+                        class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Faf%2F35%2Fef%2Faf35efa2608fe1b9fdd25613fa846b34.jpg&f=1&nofb=1&ipt=2c962e3a471795f9a7bf093a75957089315595f0681dfeecfe9228028f0b493e&ipo=images"
+                        class="d-block w-100 object-cover" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F05%2F8c%2Fa5%2F058ca55eae5b86fa8a4d52c1d1e5a4a4.jpg&f=1&nofb=1&ipt=1ada97b339fb31a18a3b0836a915b1c282a54945f6082b1cbf757da647caef7f&ipo=images"
+                        class="d-block w-100 vh-100 object-cover" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    @endif
+
     {{-- Content --}}
     @yield('content')
 </div>

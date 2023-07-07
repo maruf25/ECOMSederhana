@@ -13,11 +13,16 @@ class Chart extends Model
 
     public function paids()
     {
-        $this->belongsToMany(Paid::class);
+        return $this->belongsToMany(Paid::class);
     }
 
     public function products()
     {
-        $this->belongsToMany(Product::class);
+        return $this->belongsToMany(Product::class);
+    }
+
+    public function users()
+    {
+        return $this->belongsTo(User::class);
     }
 }

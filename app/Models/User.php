@@ -47,6 +47,11 @@ class User extends Authenticatable
 
     public function paids()
     {
-        $this->hasMany(Paid::class);
+        return $this->hasMany(Paid::class);
+    }
+
+    public function charts()
+    {
+        return $this->hasMany(Chart::class);
     }
 }

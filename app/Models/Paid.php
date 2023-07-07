@@ -13,11 +13,11 @@ class Paid extends Model
 
     public function users()
     {
-        $this->belongsTo(User::class);
+        return $this->belongsTo(User::class);
     }
 
     public function charts()
     {
-        $this->hasMany(Chart::class);
+        return $this->hasMany(Chart::class);
     }
 }

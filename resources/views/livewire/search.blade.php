@@ -1,9 +1,11 @@
 <div>
     {{-- Layout Ecom --}}
     @if ($key == 'ecom')
-        <input type="text" name="key" wire:model='search' wire:change='updateSearch' value=""
-            placeholder="search..." style="width: 70%; height: 40px;">
-        <input type="button" class="disabled" name="cari" value="SEARCH" style="width: 20%; height: 40px;">
+        <div class="input-group">
+            <input type="text" name="key" wire:model='search' wire:change='updateSearch' value=""
+                placeholder="Search Product" style="width: 70%; height: 40px;">
+            <input type="button" class="disabled" name="cari" value="SEARCH" style="width: 20%; height: 40px;">
+        </div>
     @elseif ($key == 'dashboard')
         {{-- Layout Dashboard --}}
         <div class="input-group">

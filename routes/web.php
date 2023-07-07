@@ -3,6 +3,7 @@
 use App\Http\Livewire\Dashboard\Index;
 use App\Http\Livewire\Dashboard\Product\Edit;
 use App\Http\Livewire\Dashboard\Product\Index as ProductIndex;
+use App\Http\Livewire\Dashboard\Transaction\Index as TransactionIndex;
 use App\Http\Livewire\Front\Chart;
 use App\Http\Livewire\Front\Index as FrontIndex;
 use App\Http\Livewire\Front\Order;
@@ -44,6 +45,7 @@ Route::middleware(['auth', 'verified', 'role:admin'])
         Route::get('/', Index::class)->name('index');
         Route::get('/product', ProductIndex::class)->name('product.index');
         Route::get('/product/edit/{id}', Edit::class)->name('product.edit');
+        Route::get('/transaction', TransactionIndex::class)->name('transaction.index');
     });
 
 // Route User

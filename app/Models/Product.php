@@ -13,6 +13,6 @@ class Product extends Model
 
     public function chart()
     {
-        $this->hasMany(Chart::class);
+        return $this->hasMany(Chart::class);
     }
 }
